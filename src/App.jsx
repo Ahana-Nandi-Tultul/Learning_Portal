@@ -1,6 +1,7 @@
 import './App.css'
 import Header from './components/Header/Header'
 import Portal from './components/Portal/Portal'
+import Questions from './components/Questions/Questions'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header></Header>
       <Portal></Portal>
+      <Questions></Questions>
     </>
   )
 }

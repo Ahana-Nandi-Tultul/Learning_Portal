@@ -62,16 +62,16 @@ const Portal = () => {
         <div>
              <ToastContainer />
              <div className='portal-container'>
-            <div className='blogs-container'>
-                {
-                    blogs.map(blog => <Blog 
-                        blog={blog} 
-                        key={blog.id}
-                        handleAddToBookMarked = {handleAddToBookMarked}
-                        handleSpentTime = {handleSpentTime} 
-                        ></Blog>)
-                }
-            </div>
+                <div className='blogs-container'>
+                    {
+                        blogs.map(blog => <Blog 
+                            blog={blog} 
+                            key={blog.id}
+                            handleAddToBookMarked = {handleAddToBookMarked}
+                            handleSpentTime = {handleSpentTime} 
+                            ></Blog>)
+                    }
+                </div>
             <div className='bookmarked-blogs-container'>
                 <div className='spent-time'>
                     <h4>Spent time on read : {spentTime} min</h4>
