@@ -26,7 +26,10 @@ const getBookmarks = () => {
     }
 }
 
+
+
 export {
     addToBookmark,
-    getBookmarks
+    getBookmarks,
+    addToSpentTime
 }

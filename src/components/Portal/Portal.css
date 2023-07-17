@@ -3,3 +3,35 @@
     grid-template-columns: 3fr 2fr;
     gap: 40px;
 }
+.spent-time{
+    border-radius: 8px;
+    border: 1px solid #6047EC;
+    background: rgba(96, 71, 236, 0.10);
+    padding: 20px
+
+}
+
+.spent-time h4{
+    color: #6047EC;
+    font-family: Exo2;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; 
+    text-align: center;
+}
+.bookmarked-blogs{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    background: rgba(17, 17, 17, 0.05);
+    padding: 30px;
+} 
+.bookmarked-blogs h4{
+
+    font-family: Exo 2;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}

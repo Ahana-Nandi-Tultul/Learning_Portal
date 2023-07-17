@@ -39,6 +39,7 @@ const Blog = (props) => {
                     <span>{readTime} min read <FontAwesomeIcon
                      onClick={() => handleAddToBookMarked(blog)} 
                      icon={faBookmark} /></span>
+                     
                 </div>
             </div>
             <h2 className='blog-heading'>{heading}</h2>
