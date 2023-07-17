@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Portal.css';
 import Blog from '../Blog/Blog';
+import Bookmark from '../Bookmark/Bookmark';
 
 const Portal = () => {
     const [blogs, setBlogs] = useState([]);
@@ -17,7 +18,7 @@ const Portal = () => {
                 }
             </div>
             <div className='bookmarked-blogs-container'>
-                <h1>This is book mark</h1>
+                <Bookmark></Bookmark>
             </div>
         </div>
     );
