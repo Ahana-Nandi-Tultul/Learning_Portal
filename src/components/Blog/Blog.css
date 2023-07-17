@@ -1,0 +1,54 @@
+.blog{
+    border-bottom: 1px solid rgba(17, 17, 17, 0.15);
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+}
+
+.blog>img{
+    width: 845px;
+    border-radius: 8px;
+}
+
+.person-info img{
+    width: 60px;
+    height: 60px;
+    border-radius: 55%;
+}
+
+.blog-person-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+.bloger-details{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.bloger-details h4, p{
+    margin: 0;
+}
+
+.blog-heading{
+    font-family: Exo2;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    margin-bottom: 18px;
+}
+.btn-readMark{
+    background-color: white;
+    border: none;
+    color : blue;
+    text-decoration: underline;
+}
+
+.btn-readMark::after{
+    background-color: white;
+    border: none;
+    color : navy;
+    text-decoration: underline;
+}
