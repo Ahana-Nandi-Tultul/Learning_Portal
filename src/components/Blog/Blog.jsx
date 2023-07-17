@@ -5,8 +5,8 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 import './Blog.css';
 
 const Blog = (props) => {
-    const {blog} = props;
-    const {url, profilePic, readTime, name, heading, published, tags} = blog;
+    const {blog, handleAddToBookMarked} = props;
+    const {id, url, profilePic, readTime, name, heading, published, tags} = blog;
 
     // calculating date 
     const date = new DateObject(published);
@@ -20,6 +20,7 @@ const Blog = (props) => {
     const differenceInDays = parseInt(differenceInTime / (1000 * 3600 * 24));
 
     console.log(blog);
+    
     return (
         <div className='blog'>
             <img src={url} alt="" />
@@ -31,6 +32,7 @@ const Blog = (props) => {
                             <h4>{name}</h4>
                             <p>{dateFormat} ({differenceInDays} days ago)</p>
                         </div>
+                        <p>{id}</p>
                     </div>
                 </div>
                 <div>
@@ -42,7 +44,9 @@ const Blog = (props) => {
                 tags.map(tag => <span>#{tag}{"  "}</span>)
             }
             <div style={{marginTop: "10px"}}>
-                <button className='btn-readMark'>Mark as Read</button>
+                <button className='btn-readMark'
+                 onClick={() => handleAddToBookMarked(blog)}
+                 >Mark as Read</button>
             </div>
         </div>
     );

@@ -1,0 +1,5 @@
+const addToBookmark = () => {
+    let bookmark = {};
+
+    
+}
