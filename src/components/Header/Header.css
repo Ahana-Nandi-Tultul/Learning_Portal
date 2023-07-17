@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.header img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.header h1{
+    font-family: Exo 2;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+hr{
+    background: rgba(17, 17, 17, 0.15);
+    margin-bottom: 10px;
+}
