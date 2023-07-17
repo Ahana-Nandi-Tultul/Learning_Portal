@@ -26,7 +26,22 @@ const getBookmarks = () => {
     }
 }
 
+const addToSpentTime = (blog) => {
+    let spentTime = 0;
+    const storedSpentTime = localStorage.getItem('spentTime');
+    if(storedSpentTime){
+        spentTime = parseInt(storedSpentTime);
+    }
 
+    if(spentTime){
+        spentTime = spentTime + blog.readTime;
+    }
+    else{
+        spentTime = blog.readTime;
+    }
+    localStorage.setItem('spentTime', spentTime);
+
+}
 
 export {
     addToBookmark,

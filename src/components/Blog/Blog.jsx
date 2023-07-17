@@ -5,7 +5,7 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 import './Blog.css';
 
 const Blog = (props) => {
-    const {blog, handleAddToBookMarked} = props;
+    const {blog, handleAddToBookMarked, handleSpentTime} = props;
     const {id, url, profilePic, readTime, name, heading, published, tags} = blog;
 
     // calculating date 
@@ -48,7 +48,7 @@ const Blog = (props) => {
             }
             <div style={{marginTop: "10px"}}>
                 <button className='btn-readMark'
-                 
+                 onClick={() => handleSpentTime(blog)}
                  >Mark as Read</button>
             </div>
         </div>
