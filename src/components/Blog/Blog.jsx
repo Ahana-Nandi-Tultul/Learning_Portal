@@ -32,7 +32,6 @@ const Blog = (props) => {
                             <h4>{name}</h4>
                             <p>{dateFormat} ({differenceInDays} days ago)</p>
                         </div>
-                        <p>{id}</p>
                     </div>
                 </div>
                 <div>

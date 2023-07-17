@@ -52,3 +52,10 @@
     color : navy;
     text-decoration: underline;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .blog>img{
+        width: 98%;
+    }
+}

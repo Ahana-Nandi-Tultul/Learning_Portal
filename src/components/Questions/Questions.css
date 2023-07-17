@@ -1,6 +1,24 @@
-.question h2{
+.heading{
     font-family: Exo2;
     font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.question h2{
+    font-family: Exo2;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    margin-bottom: 18px;
+}
+.question h2{
+    font-family: Exo2;
+    font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: 110%;

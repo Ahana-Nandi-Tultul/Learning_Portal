@@ -2,7 +2,7 @@ import React from 'react';
 import './Questions.css';
 const Questions = () => {
     return (
-        <div>
+        <div style={{marginBottom: "50px", width: "100%"}}>
             <h1 className='heading'>Answer of the Questions</h1>
             <div className='question'>
                 <h2>Props vs state</h2>
