@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Portal.css';
 import Blog from '../Blog/Blog';
 import Bookmark from '../Bookmark/Bookmark';
+import { addToBookmark } from '../../utilities/db';
 
 const Portal = () => {
     const [blogs, setBlogs] = useState([]);
@@ -15,6 +16,7 @@ const Portal = () => {
     const handleAddToBookMarked = (blog) => {
         const newBookmarks = [...bookmarks, blog];
         setBookmarks(newBookmarks);
+        addToBookmark(blog);
     }
     return (
         <div className='portal-container'>
