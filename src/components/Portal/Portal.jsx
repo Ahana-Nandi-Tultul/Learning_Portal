@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Portal.css';
 import Blog from '../Blog/Blog';
 import Bookmark from '../Bookmark/Bookmark';
-import { addToBookmark } from '../../utilities/db';
+import { addToBookmark, getBookmarks } from '../../utilities/db';
 
 const Portal = () => {
     const [blogs, setBlogs] = useState([]);
@@ -12,6 +12,20 @@ const Portal = () => {
         .then(res => res.json())
         .then(data => setBlogs(data))
     },[]);
+
+    useEffect(() => {
+        const storedBookmarks = getBookmarks();
+        let bookmarkedBlogs = [];
+        if(storedBookmarks){
+            for(const bookmark in storedBookmarks){
+                const bookmarkedBlog = blogs.find(blog => blog.id === bookmark);
+                if(bookmarkedBlog){
+                    bookmarkedBlogs.push(bookmarkedBlog);
+                }
+            }
+        }
+        setBookmarks(bookmarkedBlogs);
+    },[blogs])
 
     const handleAddToBookMarked = (blog) => {
         const newBookmarks = [...bookmarks, blog];

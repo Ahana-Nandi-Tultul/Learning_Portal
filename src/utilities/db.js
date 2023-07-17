@@ -18,6 +18,15 @@ const addToBookmark = (blog) => {
 
 }
 
+const getBookmarks = () => {
+    const storedbookmarks = localStorage.getItem("bookmarks");
+    if(storedbookmarks){
+        let bookmarks = JSON.parse(storedbookmarks);
+        return bookmarks;
+    }
+}
+
 export {
-    addToBookmark
+    addToBookmark,
+    getBookmarks
 }

@@ -1,0 +1,12 @@
+.each-bookmark{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+.each-bookmark h4{
+    font-family: Exo2;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+}

@@ -19,7 +19,7 @@ const Blog = (props) => {
     const differenceInTime = currentDate.getTime() - previouseDate.getTime();
     const differenceInDays = parseInt(differenceInTime / (1000 * 3600 * 24));
 
-    console.log(blog);
+    // console.log(blog);
     
     return (
         <div className='blog'>
@@ -36,7 +36,9 @@ const Blog = (props) => {
                     </div>
                 </div>
                 <div>
-                    <span>{readTime} min read <FontAwesomeIcon icon={faBookmark} /></span>
+                    <span>{readTime} min read <FontAwesomeIcon
+                     onClick={() => handleAddToBookMarked(blog)} 
+                     icon={faBookmark} /></span>
                 </div>
             </div>
             <h2 className='blog-heading'>{heading}</h2>
@@ -45,7 +47,7 @@ const Blog = (props) => {
             }
             <div style={{marginTop: "10px"}}>
                 <button className='btn-readMark'
-                 onClick={() => handleAddToBookMarked(blog)}
+                 
                  >Mark as Read</button>
             </div>
         </div>
